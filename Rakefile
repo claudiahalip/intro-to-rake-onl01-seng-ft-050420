@@ -35,11 +35,9 @@ namespace :db do
   end
   
   desc 'seed the database with some dummy data'
-    task :seed do
-      require_relative
-        './db/seed.rb'
-  
-    end 
+  task :seed do
+    require_relative './db/seeds.rb'
+  end
 end
 
 desc 'drop into the Pry console'
